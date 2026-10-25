@@ -1,0 +1,44 @@
+
+:root{--bg:#f2f2f2;--nav-bg:#131921;--subnav-bg:#232f3e;--muted:#6b7280}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#0f172a}
+
+.navbar{display:flex;align-items:center;gap:1rem;background:var(--nav-bg);color:#fff;padding:.6rem 1rem;flex-wrap:wrap}
+.nav-logo img{height:48px}
+.nav-location{display:flex;align-items:center;gap:.6rem}
+.nav-location .small{font-size:.85rem;color:#cbd5e1}
+.nav-location .large{font-size:.95rem;font-weight:600;color:#fff}
+
+.nav-search{display:flex;flex:1;max-width:700px;background:#fff;border-radius:6px;overflow:hidden}
+.search-select{background:#f3f4f6;border:0;padding:.6rem;border-right:1px solid #e6e6e6}
+.nav-search input{flex:1;border:0;padding:.6rem;font-size:1rem}
+.nav-search button{background:transparent;border:0;padding:.6rem}
+
+.nav-language{display:flex;align-items:center;gap:.35rem;color:#fff}
+.nav-account,.nav-orders{line-height:1.1}
+.small{font-size:.8rem;color:#cbd5e1}
+.large{font-size:.95rem;font-weight:600;color:#fff}
+.nav-cart img{height:22px}
+
+.sub-nav{background:var(--subnav-bg);color:#fff}
+.nav-list{display:flex;gap:1rem;padding:.5rem 1rem;list-style:none;overflow:auto}
+.nav-link{color:#fff;text-decoration:none;font-weight:600;padding:.35rem}
+.nav-link:hover{opacity:.9}
+
+.scrolimage{position:relative;height:420px;overflow:hidden}
+.scrol{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:slideshow-fade 30s infinite}
+.scrol:nth-child(1){animation-delay:0s}.scrol:nth-child(2){animation-delay:5s}.scrol:nth-child(3){animation-delay:10s}.scrol:nth-child(4){animation-delay:15s}.scrol:nth-child(5){animation-delay:20s}.scrol:nth-child(6){animation-delay:25s}
+@keyframes slideshow-fade{0%,16.66%{opacity:0}1.5%,14%{opacity:1}15.5%{opacity:0}}
+
+.container{max-width:1200px;margin:0 auto;padding:1rem}
+.main-content{padding:2rem 0}
+.products{margin-bottom:2rem}
+.title{font-size:1.25rem;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.grid-item{background:#fff;padding:.4rem;border-radius:6px;display:flex;flex-direction:column;gap:.5rem}
+.grid-item img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+.explore-link{display:inline-block;margin-top:.75rem;color:#007185}
+
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.scrol{height:320px}}
+@media(max-width:640px){.navbar{justify-content:center}.nav-search{order:3;width:100%;max-width:none}.grid{grid-template-columns:1fr}.scrol{height:220px}}

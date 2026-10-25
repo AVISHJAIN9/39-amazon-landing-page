@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a2e0b5d98a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="nav-logo">
+      <a href="index.html"><img src="assets/amazonlogo.png" alt="Amazon Logo" height="60"></a>
+    </div>
+
+    <div class="nav-location">
+      <img src="assets/locationsign.png" height="36" alt="location icon">
+      <div>
+        <p class="small">Delivering to Bengaluru 562130</p>
+        <p class="large">Update location</p>
+      </div>
+    </div>
+
+    <form class="nav-search" role="search" action="#" onsubmit="return false;">
+      <select class="search-select" aria-label="Search category">
+        <option>All</option>
+      </select>
+      <input type="search" aria-label="Search" placeholder="Search amazon.in">
+  <button aria-label="Search"><img src="assets/search_icon.png" alt="Search" height="18"></button>
+    </form>
+
+    <div class="nav-language">
+      <img src="assets/indianflag.png" height="20" alt="Indian flag">
+      <span>EN</span>
+    </div>
+
+    <div class="nav-account" role="link" tabindex="0">
+      <p class="small">Hello, sign in</p>
+      <p class="large">Account &amp; Lists</p>
+    </div>
+
+    <div class="nav-orders">
+      <p class="small">Returns</p>
+      <p class="large">&amp; Orders</p>
+    </div>
+
+    <div class="nav-cart" role="link" tabindex="0">
+      <img src="assets/carticon.png" alt="Cart" height="22">
+      <span class="large">Cart</span>
+    </div>
+  </header>
+  <nav class="sub-nav" aria-label="Secondary">
+    <ul class="nav-list">
+      <li class="nav-item dropdown"><a href="#fresh" class="nav-link">Fresh <span class="dropdown-arrow">▼</span></a></li>
+      <li class="nav-item"><a href="#mxplayer" class="nav-link">MX Player</a></li>
+      <li class="nav-item"><a href="#sell" class="nav-link">Sell</a></li>
+      <li class="nav-item"><a href="#bestsellers" class="nav-link">Bestsellers</a></li>
+      <li class="nav-item"><a href="#deals" class="nav-link">Today's Deals</a></li>
+      <li class="nav-item"><a href="#mobiles" class="nav-link">Mobiles</a></li>
+      <li class="nav-item"><a href="#new" class="nav-link">New Releases</a></li>
+      <li class="nav-item"><a href="#customerservice" class="nav-link">Customer Service</a></li>
+    </ul>
+  </nav>
+
+    <div class="scrolimage" aria-hidden="true">
+    <img src="assets/header1.jpg" class="scrol" alt="First banner image">
+    <img src="assets/header2.jpg" class="scrol" alt="Second banner image">
+    <img src="assets/header3.jpg" class="scrol" alt="Third banner image">
+    <img src="assets/header4.jpg" class="scrol" alt="Fourth banner image">
+    <img src="assets/header5.jpg" class="scrol" alt="Fifth banner image">
+    <img src="assets/header6.jpg" class="scrol" alt="Sixth banner image">
+  </div>
+
+  <main class="main-content" aria-live="polite">
+    <section class="products container">
+      <h2 class="title">Revamp your home in style</h2>
+      <div class="grid four-box-grid">
+        <a href="#" class="grid-item">
+          <img src="assets/14st.jpg" alt="Curtain and bedsheet">
+          <p>Curtains, covers and more</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/24th.jpg" alt="Vases and decor">
+          <p>Figurines, vases and more</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/34.jpg" alt="Home storage">
+          <p>Home storage</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/44.jpg" alt="Lighting">
+          <p>Lighting solutions</p>
+        </a>
+      </div>
+      <a href="#" class="explore-link">Explore all</a>
+    </section>
+
+    <section class="products container">
+      <h2 class="title">Appliances for your home | Up to 55% off</h2>
+      <div class="grid four-box-grid">
+        <a href="#" class="grid-item">
+          <img src="assets/54.jpg" alt="Air conditioners">
+          <p>Air conditioners</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/64.jpg" alt="Refrigerators">
+          <p>Refrigerators</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/74.jpg" alt="Microwaves">
+          <p>Microwaves</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/84.jpg" alt="Washing machines">
+          <p>Washing machines</p>
+        </a>
+      </div>
+      <a href="#" class="explore-link">See all</a>
+    </section>
+
+    <section class="products container">
+      <h2 class="title">Starting ₹149 | Headphones</h2>
+      <div class="grid four-box-grid">
+        <a href="#" class="grid-item">
+          <img src="assets/94.jpg" alt="BOAT headphones">
+          <p>Starting ₹249 | BOAT</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/104.jpg" alt="BOLTS headphones">
+          <p>Starting ₹349 | BOLTS</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/114.jpg" alt="NOISE headphones">
+          <p>Starting ₹649 | NOISE</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="assets/124.jpg" alt="ZEBRONICS">
+          <p>Starting ₹149 | ZEBRONICS</p>
+        </a>
+      </div>
+      <a href="#" class="explore-link">See all offers</a>
+    </section>
+
+    <section class="products container">
+      <h2 class="title">Under ₹499 | Deals on home improvement essentials</h2>
+      <div class="grid four-box-grid">
+  <a href="#" class="grid-item"><img src="assets/134.jpg" alt="Deal 1"><p>Under ₹199</p></a>
+  <a href="#" class="grid-item"><img src="assets/144.jpg" alt="Deal 2"><p>Under ₹399</p></a>
+  <a href="#" class="grid-item"><img src="assets/154.jpg" alt="Deal 3"><p>Under ₹499</p></a>
+  <a href="#" class="grid-item"><img src="assets/164.jpg" alt="Deal 4"><p>Under ₹299</p></a>
+      </div>
+      <a href="#" class="explore-link">Explore all</a>
+    </section>
+  </main>
+</body>
+</html>
